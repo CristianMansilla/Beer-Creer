@@ -1,0 +1,36 @@
+@import url(./style.css);
+
+:root{
+    --brown: #947654;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+main{
+    background-color: var(--black);
+}
+
+.container-image__main{
+    height: 20em;
+    background-image: url(./img/food1.jpg);
+    background-repeat: no-repeat;
+    background-position-y: 40%;
+    background-size: cover;
+    position: relative;
+    display: flex;
+}
+
+.container-image__main>h2{
+    position: absolute;
+    text-align: center;
+    margin: 1em 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+main p{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    margin-top: 1em;
+}
