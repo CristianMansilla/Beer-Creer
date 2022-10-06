@@ -8,6 +8,8 @@
 
 main{
     background-color: var(--black);
+    display: flex;
+    flex-direction: column;
 }
 
 .container-image__main{
@@ -33,4 +35,70 @@ main p{
     text-align: center;
     margin: auto;
     margin-top: 1em;
+}
+
+main button{
+    background-color: var(--brown);
+    color: var(--white);
+    padding: 1em;
+    border-radius: 8px;
+    margin: auto;
+}
+
+/** Ventana modal **/
+.modal-reservation{
+    position: fixed;
+    /* Para que ocupe toda la pantalla */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(51, 51, 51, 0.765);
+    display: flex;
+    
+    /* Custom Properties */
+    --opacity: 0;
+    --pointer: none;
+
+    /* Inicalmente no se ve */
+    opacity: var(--opacity);
+    pointer-events: var(--pointer);
+    transition: opacity .5s;
+    z-index: 2;
+}
+
+.modal-reservation:target{
+    --opacity: 1;
+    --pointer: unset;
+}
+
+/* nombreAnimacion - duración - retardo */
+.modal-reservation:target .modal-container{
+    animation: show 1s .5s backwards;
+}
+
+@keyframes show{
+    0%{
+        transform: translateY(-150vh);
+    }
+}
+
+.modal-container{
+    margin: auto;
+    background-color: var(--brown);
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    overflow: hidden;
+    text-align: center;
+    padding: 2.5em 1.5em;
+    border-radius: 1em;
+}
+
+.modal-container>button{
+    display: inline-block;
+    background-color: var(--black);
+    padding: 1em 2em;
+    border-radius: 0.4em;
+    cursor: pointer;
 }
