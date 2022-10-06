@@ -1,4 +1,4 @@
-# Beer para Creer
+# IniciaFood 🍽️
 
 # Integrantes:
 ## 🔷 Álvarez, Brisa
