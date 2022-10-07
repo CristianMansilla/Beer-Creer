@@ -93,6 +93,7 @@ main button{
     text-align: center;
     padding: 2.5em 1.5em;
     border-radius: 1em;
+    position: relative;
 }
 
 .modal-container>button{
@@ -101,4 +102,43 @@ main button{
     padding: 1em 2em;
     border-radius: 0.4em;
     cursor: pointer;
+    margin-top: 2em;
+}
+
+.modal-container>form{
+    width: 70%;
+    margin: auto;
+    margin-top: 2em;
+}
+.modal-reservation__form-items{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-bottom: 1em;
+}
+
+.modal-reservation__form-items>textarea{
+    resize: none;
+}
+
+.timeToDine-items>label{
+    margin-right: 1em;
+}
+
+.form-exit{
+    color: var(--black);
+    font-size: 1.5em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1em 1.5em;
+}
+
+.form-back{
+    color: var(--black);
+    font-size: 1.5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1em 1.5em;
 }
