@@ -30,11 +30,19 @@ main{
     transform: translateX(-50%);
 }
 
-main p{
-    width: 60%;
-    text-align: center;
+.container-information__main{
+    /* background-color: red; */
+    width: 80%;
     margin: auto;
-    margin-top: 1em;
+    text-align: center;
+}
+
+.container-information__main>h3{
+    margin-bottom: .5em;
+}
+
+.container-information__main>h4{
+    margin-bottom: .3em;
 }
 
 main button{
@@ -46,6 +54,19 @@ main button{
 }
 
 /** Ventana modal **/
+input,
+select,
+option,
+textarea,
+button{
+    font-family: 'Signika Negative', sans-serif;
+    border-radius: 1em;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+
 .modal-reservation{
     position: fixed;
     /* Para que ocupe toda la pantalla */
@@ -110,6 +131,12 @@ main button{
     margin: auto;
     margin-top: 2em;
 }
+
+.or{
+    text-align: center;
+    margin-top: 1em;
+}
+
 .modal-reservation__form-items{
     display: flex;
     flex-direction: column;
@@ -123,6 +150,24 @@ main button{
 
 .timeToDine-items>label{
     margin-right: 1em;
+}
+
+.creditCard-card{
+    display: flex;
+    /* background-color: red; */
+    /* flex-direction: row; */
+    /* flex-direction: column; */
+    gap: 2em;
+}
+
+.icon-creditCard{
+    color: rgba(12, 12, 12, 0.776);
+    font-size: 2em;
+}
+
+input[type="radio"]{
+    width: 1.5em;
+    height: 1.5em;
 }
 
 .form-exit{
@@ -142,3 +187,4 @@ main button{
     left: 0;
     margin: 1em 1.5em;
 }
+
