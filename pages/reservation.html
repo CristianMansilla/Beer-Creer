@@ -35,9 +35,123 @@
         <section id="modal-reser" class="modal-reservation">
             <div class="modal-container">
                 <h2>MAKE YOUR SELECTION</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi aperiam fuga rerum sunt veritatis tempore, dicta numquam quod, quo, sapiente amet! Dignissimos a molestias libero laudantium? Voluptates eveniet ad dolore fugit. Accusamus praesentium ab tempora tempore magni nesciunt vitae nobis consequatur maiores asperiores, aperiam eum et quod nulla quaerat at.</p>
+                <form action="">
+                    <div class="modal-reservation__form-items">
+                        <label for="">Number of guests:</label>
+                        <select name="" id="">
+                            <option value="">1 Guest</option>
+                            <option value="">2 Guests</option>
+                            <option value="">3 Guests</option>
+                            <option value="">4 Guests</option>
+                            <option value="">5 Guests</option>
+                            <option value="">6 Guests</option>
+                            <option value="">7 Guests</option>
+                            <option value="">8 Guests</option>
+                            <option value="">9 Guests</option>
+                            <option value="">10 Guests</option>
+                        </select>
+                    </div>
+                    
+                    <div class="modal-reservation__form-items">
+                        <label for="">Date to Dine:</label>
+                        <input type="date" name="" id="">
+                    </div>
 
-                <button><a href="#title-reservation">Close</a></button>
+                    
+                    <div class="modal-reservation__form-items">
+                        <label for="">Place:</label>
+                        <select name="" id="">
+                            <option value="" disabled selected>Please choose an area</option>
+                            <option value="">Area 1</option>
+                            <option value="">Area 2</option>
+                        </select>
+                    </div>
+                    
+                    <div class="modal-reservation__form-items">
+                        <label for="">Time to Dine</label>
+
+                        <label for="">Lunch:</label>
+                        <select name="" id="">
+                            <option value="" disabled selected>Please choose a time</option>
+                            <option value="">11:30</option>
+                            <option value="">12:00</option>
+                            <option value="">12:30</option>
+                            <option value="">13:00</option>
+                            <option value="">13:30</option>
+                            <option value="">14:00</option>
+                        </select>
+                        <!-- <div class="timeToDine-items">
+                            <input type="radio" name="" id="">
+                            <label for="">12:00</label>
+                            <input type="radio" name="" id="">
+                            <label for="">12:30</label>
+                            <input type="radio" name="" id="">
+                            <label for="">13:00</label>
+                            <input type="radio" name="" id="">
+                            <label for="">13:30</label>
+                            <input type="radio" name="" id="">
+                            <label for="">14:00</label>
+                        </div> -->
+                        <p>OR</p>
+
+                        <label for="">Dinner:</label>
+                        <select name="" id="">
+                            <option value="" disabled selected>Please choose a time</option>
+                            <option value="">20:30</option>
+                            <option value="">21:00</option>
+                            <option value="">21:30</option>
+                            <option value="">22:00</option>
+                            <option value="">22:30</option>
+                            <option value="">23:00</option>
+                            <option value="">23:30</option>
+                            <option value="">00:00</option>
+                        </select>
+                    </div>
+                </form>
+
+                <button><a href="#modal-reser2">Continue</a></button>
+
+                <a href="#title-reservation" class="form-exit"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+        </section>
+
+        <section id="modal-reser2" class="modal-reservation">
+            <div class="modal-container">
+                <h2>YOUR CONTACT DETAILS</h2>
+                <form action="">
+                    <div class="modal-reservation__form-items">
+                        <label for="">First Name:</label>
+                        <input type="text">
+                    </div>
+                    
+                    <div class="modal-reservation__form-items">
+                        <label for="">Surname:</label>
+                        <input type="text">
+                    </div>
+
+                    
+                    <div class="modal-reservation__form-items">
+                        <label for="">Phone Number:</label>
+                        <input type="tel">
+                    </div>
+                    
+                    <div class="modal-reservation__form-items">
+                        <label for="">Email</label>
+                        <input type="email" name="" id="" required>
+                    </div>
+
+                    <div class="modal-reservation__form-items">
+                        <label for="">Add a special request (optional)</label>
+                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                    </div>
+                    
+                </form>
+                <p>Review the options and then click reserve</p>
+
+                <button><a href="#title-reservation">Reserve</a></button>
+
+                <a href="#modal-reser" class="form-back"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="#title-reservation" class="form-exit"><i class="fa-solid fa-xmark"></i></a>
             </div>
         </section>
     </main>
