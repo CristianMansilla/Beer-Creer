@@ -50,8 +50,9 @@ header{
 }
 
 .logo-image{
-    width: 100px;
-    
+    width: 80px;
+    border-radius: 10%;
+    margin: .2em .4em .2em 0;
 }
 
 .logo-title{
