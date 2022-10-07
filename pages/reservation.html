@@ -29,7 +29,16 @@
         <div class="container-image__main">
             <h2 id="title-reservation">Reserve a table</h2>
         </div>
-        <p>Please note: We kindly require your credit card details to secure your booking. Please notify us of any change of plans at least 24 hours prior to your reservation. If we don’t hear from you at least 24 hours prior to your booking, or in the event of a no show, you will be charged $10 USD per head late notice fee.</p>
+
+        <div class="container-information__main">
+            <h3>What to know before you go</h3>
+    
+            <h4>Important dining information</h4>
+            <p>We kindly require your credit card details to secure your booking. Please notify us of any change of plans at least 24 hours prior to your reservation. If we don't hear from you at least 24 hours prior to your booking, or in the event of a no show, you will be charged $10 USD per head late notice fee.</p>
+            <p>We have a 15 minute grace period. Please call us if you are running later than 15 minutes after your booked time.</p>
+            <p>We may contact you about this booking, so please ensure your email and phone number are up to date.</p>
+        </div>
+        
         <button><a href="#modal-reser">Continue</a></button>
 
         <section id="modal-reser" class="modal-reservation">
@@ -38,7 +47,7 @@
                 <form action="">
                     <div class="modal-reservation__form-items">
                         <label for="">Number of guests:</label>
-                        <select name="" id="">
+                        <select name="" id="" required>
                             <option value="">1 Guest</option>
                             <option value="">2 Guests</option>
                             <option value="">3 Guests</option>
@@ -53,14 +62,14 @@
                     </div>
                     
                     <div class="modal-reservation__form-items">
-                        <label for="">Date to Dine:</label>
-                        <input type="date" name="" id="">
+                        <label for="">Date to dine:</label>
+                        <input type="date" name="" id="" required>
                     </div>
 
                     
                     <div class="modal-reservation__form-items">
                         <label for="">Place:</label>
-                        <select name="" id="">
+                        <select name="" id="" required>
                             <option value="" disabled selected>Please choose an area</option>
                             <option value="">Area 1</option>
                             <option value="">Area 2</option>
@@ -68,10 +77,10 @@
                     </div>
                     
                     <div class="modal-reservation__form-items">
-                        <label for="">Time to Dine</label>
+                        <label for="">Time to dine</label>
 
                         <label for="">Lunch:</label>
-                        <select name="" id="">
+                        <select name="" id="" name="lunch">
                             <option value="" disabled selected>Please choose a time</option>
                             <option value="">11:30</option>
                             <option value="">12:00</option>
@@ -92,10 +101,10 @@
                             <input type="radio" name="" id="">
                             <label for="">14:00</label>
                         </div> -->
-                        <p>OR</p>
+                        <p class="or">OR</p>
 
                         <label for="">Dinner:</label>
-                        <select name="" id="">
+                        <select name="" id="" name="dinner">
                             <option value="" disabled selected>Please choose a time</option>
                             <option value="">20:30</option>
                             <option value="">21:00</option>
@@ -108,8 +117,7 @@
                         </select>
                     </div>
                 </form>
-
-                <button><a href="#modal-reser2">Continue</a></button>
+                <button type="submit"><a href="#modal-reser2">Continue</a></button>
 
                 <a href="#title-reservation" class="form-exit"><i class="fa-solid fa-xmark"></i></a>
             </div>
@@ -120,19 +128,19 @@
                 <h2>YOUR CONTACT DETAILS</h2>
                 <form action="">
                     <div class="modal-reservation__form-items">
-                        <label for="">First Name:</label>
-                        <input type="text">
+                        <label for="">First name:</label>
+                        <input type="text" required name="firstName">
                     </div>
                     
                     <div class="modal-reservation__form-items">
                         <label for="">Surname:</label>
-                        <input type="text">
+                        <input type="text" required name="Surname">
                     </div>
 
                     
                     <div class="modal-reservation__form-items">
-                        <label for="">Phone Number:</label>
-                        <input type="tel">
+                        <label for="">Phone number:</label>
+                        <input type="tel" required>
                     </div>
                     
                     <div class="modal-reservation__form-items">
@@ -142,15 +150,73 @@
 
                     <div class="modal-reservation__form-items">
                         <label for="">Add a special request (optional)</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea name="" id="" cols="30" rows="2" x-webkit.speech></textarea>
                     </div>
                     
                 </form>
-                <p>Review the options and then click reserve</p>
 
-                <button><a href="#title-reservation">Reserve</a></button>
+                <button type="submit"><a href="#modal-reser3">Reserve</a></button>
 
                 <a href="#modal-reser" class="form-back"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="#title-reservation" class="form-exit"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+        </section>
+
+        <section id="modal-reser3" class="modal-reservation">
+            <div class="modal-container">
+                <h2>CREDIT CARD DETAILS</h2>
+                <form action="">
+                    <div class="modal-reservation__form-items">
+                        <label for="">Country:</label>
+                        <input type="text" required name="country">
+                    </div>
+
+                    <div class="modal-reservation__form-items">
+                        <label for="">Card:</label>
+                        <section class="creditCard-card">
+                            <div>
+                                <label for=""><i class="fa-brands fa-cc-mastercard icon-creditCard"></i></label>
+                                <input type="radio" name="" id="">
+                            </div>
+    
+                            <div>
+                                <label for=""><i class="fa-brands fa-cc-visa icon-creditCard"></i></label>
+                                <input type="radio" name="" id="">
+                            </div>
+    
+                            <div>
+                                <label for=""><i class="fa-brands fa-cc-amex icon-creditCard"></i></label>
+                                <input type="radio" name="" id="">
+                            </div>
+                        </section>
+                    </div>
+                    
+                    <div class="modal-reservation__form-items">
+                        <label for="">Name on card:</label>
+                        <input type="text" required name="nameOnCard">
+                    </div>
+
+                    
+                    <div class="modal-reservation__form-items">
+                        <label for="">Card number:</label>
+                        <input type="text" required>
+                    </div>
+                    
+                    <div class="modal-reservation__form-items">
+                        <label for="">Expiration date:</label>
+                        <input type="text" required placeholder="mm/yy">
+                    </div>
+
+                    <div class="modal-reservation__form-items">
+                        <label for="">CVC:</label>
+                        <input type="text" required>
+                    </div>
+                    
+                </form>
+                <p>Check that all the options were entered correctly and then click confirm</p>
+                <button type="submit"><a href="#title-reservation">Confirm</a></button>
+
+                <a href="#modal-reser2" class="form-back"><i class="fa-solid fa-arrow-left"></i></a>
                 <a href="#title-reservation" class="form-exit"><i class="fa-solid fa-xmark"></i></a>
             </div>
         </section>
