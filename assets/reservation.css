@@ -34,14 +34,25 @@ main{
     /* background-color: red; */
     width: 80%;
     margin: auto;
-    text-align: center;
+    text-align: justify;
 }
 
 .container-information__main>h3{
     margin-bottom: .5em;
+    text-align: center;
 }
 
-.container-information__main>h4{
+.container-information__main-info{
+    border: 1px solid rgba(197, 171, 38, 0.539);
+    border-radius: 1em;
+    padding: .5em;
+    width: 80%;
+    margin: auto;
+    box-shadow: 0 1em 1em rgba(199, 176, 72, 0.2);
+}
+
+
+.container-information__main-info>h4{
     margin-bottom: .3em;
 }
 
