@@ -90,52 +90,70 @@ main{
     height: 100vh;
 }
 
-/** Footer **/
-footer{
-    background-color: #947654;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1em;
-}
-
-footer>p:nth-of-type(2){
-    background-color: rgba(255, 0, 0, 0.251);
-    margin: 1em 0;
-}
-
-.nameTeam{
-    text-align: start;
-}
-
-.container-team{
-    display: grid;
-    grid-template-columns: repeat(4);
-    width: 100%;
+/*Home Page*/
+h2.tile1-home{
+    margin-top: 15%;
+    padding-bottom: 5%;
     justify-content: center;
-    gap: 8em;
-}
+    text-align: center;
+    }
+    .presentation-section{
+        margin-left: 20%;
+        margin-right: 20%;
+        padding-bottom: 6%;
+        }
+    .presentation-member-1{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 5%;
+        margin-bottom: 4%;
+        background-color: #947654a0;
+        border-radius: 0% 15%;
+        color: black;
 
-.container-team-bri{
-    grid-column: 1;
-    display: flex;
-    gap: .5em;
-}
+    }    
+    .presentation-member-2{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 5%;
+        margin-bottom: 4%;
+        background-color: #ffffff;
+        border-radius: 0% 15%;
+        color: black;
 
-.container-team-cris{
-    grid-column: 2;
-    display: flex;
-    gap: .5em;
-}
+    }    
 
-.container-team-dai{
-    grid-column: 3;
-    display: flex;
-    gap: .5em;
-}
+    h2.title2-home{
+        margin-top: 15%;
+        margin-bottom: 2%;
+        justify-content: center;
+        text-align: center;
+    }
+    .iniciatec-info-img{
+      display: grid;
+      grid-template-columns: 70% 30%;
+      justify-content: center;
+      align-items: center;
+      margin-left: 15%;
+      margin-right: 15%;    
+    }
+    
+    img.iniciatec-picture{
+        display: flex;
+        height: 30vh;
+        width: 20vw;
+    }
+    p.p2-home{
+        justify-content:start;
+        text-align: center;
+        margin-right: 5%;
+    }
+    h2.title3-home{
+        margin-top: 15%;
+        padding-bottom: 6%;
+        justify-content: center;
+        text-align: center;
 
-.container-team-mauri{
-    grid-column: 4;
-    display: flex;
-    gap: .5em;
-}
+    
+    }    
+
