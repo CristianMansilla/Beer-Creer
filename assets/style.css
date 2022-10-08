@@ -16,6 +16,8 @@
 body{
     color: var(--white);
     font-family: 'Signika Negative', sans-serif;
+    /*font-family: 'Barlow Semi Condensed', sans-serif;*/
+    font-size: 14px;
     background-color: var(--black);
 }
 
@@ -39,19 +41,20 @@ header{
     display: flex;
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.705);
-    padding: 0 1em;
+    padding: 0 3em;
     border-bottom: .6em solid #947654a0;
     width: 100%;
 }
 
 .logo{
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
 .logo-image{
-    width: 100px;
-    
+    width: 150px;
+    margin-top: 10px;
 }
 
 .logo-title{
@@ -60,7 +63,7 @@ header{
     white-space: nowrap;
     border-right: 4px solid;
     width: 11ch;
-
+    margin-bottom: 10px;
     animation: typing 2s steps(10), blink .5s infinite step-end alternate;
     overflow: hidden;
 }
@@ -139,3 +142,28 @@ footer>p:nth-of-type(2){
     display: flex;
     gap: .5em;
 }
+/*style HOME*/
+/*.img-menu {
+    background-image: url(./img/gif_menu2.jpg);
+    background-position-y: 70%;
+    width: 100%;
+    height: 500px;
+}*/
+/*style MENU*/
+.img-menu {
+    background-image: url(https://hospitalityinsights.ehl.edu/hubfs/Blog-EHL-Insights/Blog-Header-EHL-Insights/culinary%20arts.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 92%;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    padding-top: 50px;
+    opacity: 0.9;
+}
+
+.p-menu {
+    padding: 40px 50px;
+    text-align: center;
+}
+ 
