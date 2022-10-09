@@ -56,12 +56,18 @@ main{
     margin-bottom: .3em;
 }
 
-main button{
+.main-button{
     background-color: var(--brown);
     color: var(--white);
     padding: 1em;
     border-radius: 8px;
     margin: auto;
+}
+
+.main-button:hover{
+    background: #556270;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF6B6B, #556270);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF6B6B, #556270); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /** Ventana modal **/
@@ -117,7 +123,6 @@ button{
 
 .modal-container{
     margin: auto;
-    background-color: var(--brown);
     width: 90%;
     max-width: 600px;
     max-height: 90%;
@@ -126,6 +131,9 @@ button{
     padding: 2.5em 1.5em;
     border-radius: 1em;
     position: relative;
+    background: #BA8B02;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #181818, #BA8B02);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #181818, #BA8B02); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
 }
 
 .modal-container>button{
@@ -137,6 +145,10 @@ button{
     margin-top: 2em;
 }
 
+.modal-container>button:hover{
+    background-color: #282626;
+}
+
 .modal-container>form{
     width: 70%;
     margin: auto;
@@ -146,6 +158,16 @@ button{
 .or{
     text-align: center;
     margin-top: 1em;
+}
+
+.modal-reservation__p{
+    width: 80%;
+    margin: 2em auto 0;
+    text-align: justify;
+}
+
+.modal-reservation__p>p:nth-of-type(3){
+    font-weight: bold;
 }
 
 .modal-reservation__form-items{
@@ -165,14 +187,10 @@ button{
 
 .creditCard-card{
     display: flex;
-    /* background-color: red; */
-    /* flex-direction: row; */
-    /* flex-direction: column; */
     gap: 2em;
 }
 
 .icon-creditCard{
-    color: rgba(12, 12, 12, 0.776);
     font-size: 2em;
 }
 
@@ -182,7 +200,7 @@ input[type="radio"]{
 }
 
 .form-exit{
-    color: var(--black);
+    color: #d2caca;;
     font-size: 1.5em;
     position: absolute;
     top: 0;
@@ -191,11 +209,16 @@ input[type="radio"]{
 }
 
 .form-back{
-    color: var(--black);
+    color: #d2caca;;
     font-size: 1.5em;
     position: absolute;
     top: 0;
     left: 0;
     margin: 1em 1.5em;
+}
+
+.form-exit:hover,
+.form-back:hover{
+    color: #4b4646;
 }
 
