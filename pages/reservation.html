@@ -41,7 +41,7 @@
             </div>
         </div>
 
-        <button><a href="#modal-reser">Continue</a></button>
+        <button class="main-button"><a href="#modal-reser">Continue</a></button>
 
         <section id="modal-reser" class="modal-reservation">
             <div class="modal-container">
@@ -49,32 +49,32 @@
                 <form action="">
                     <div class="modal-reservation__form-items">
                         <label for="">Number of guests:</label>
-                        <select name="" id="" required>
-                            <option value="">1 Guest</option>
-                            <option value="">2 Guests</option>
-                            <option value="">3 Guests</option>
-                            <option value="">4 Guests</option>
-                            <option value="">5 Guests</option>
-                            <option value="">6 Guests</option>
-                            <option value="">7 Guests</option>
-                            <option value="">8 Guests</option>
-                            <option value="">9 Guests</option>
-                            <option value="">10 Guests</option>
+                        <select name="numberofGuests" required>
+                            <option>1 Guest</option>
+                            <option>2 Guests</option>
+                            <option>3 Guests</option>
+                            <option>4 Guests</option>
+                            <option>5 Guests</option>
+                            <option>6 Guests</option>
+                            <option>7 Guests</option>
+                            <option>8 Guests</option>
+                            <option>9 Guests</option>
+                            <option>10 Guests</option>
                         </select>
                     </div>
                     
                     <div class="modal-reservation__form-items">
-                        <label for="">Date to dine:</label>
-                        <input type="date" name="" id="" required>
+                        <label for="dateToDine">Date to dine:</label>
+                        <input type="date" name="dateToDine" id="dateToDine" required>
                     </div>
 
                     
                     <div class="modal-reservation__form-items">
                         <label for="">Place:</label>
-                        <select name="" id="" required>
-                            <option value="" disabled selected>Please choose an area</option>
-                            <option value="">Area 1</option>
-                            <option value="">Area 2</option>
+                        <select name="place" required>
+                            <option disabled selected>Please choose an area</option>
+                            <option>Area 1</option>
+                            <option>Area 2</option>
                         </select>
                     </div>
                     
@@ -82,40 +82,29 @@
                         <label for="">Time to dine</label>
 
                         <label for="">Lunch:</label>
-                        <select name="" id="" name="lunch">
-                            <option value="" disabled selected>Please choose a time</option>
-                            <option value="">11:30</option>
-                            <option value="">12:00</option>
-                            <option value="">12:30</option>
-                            <option value="">13:00</option>
-                            <option value="">13:30</option>
-                            <option value="">14:00</option>
+                        <select name="lunch">
+                            <option disabled selected>Please choose a time</option>
+                            <option>11:30</option>
+                            <option>12:00</option>
+                            <option>12:30</option>
+                            <option>13:00</option>
+                            <option>13:30</option>
+                            <option>14:00</option>
                         </select>
-                        <!-- <div class="timeToDine-items">
-                            <input type="radio" name="" id="">
-                            <label for="">12:00</label>
-                            <input type="radio" name="" id="">
-                            <label for="">12:30</label>
-                            <input type="radio" name="" id="">
-                            <label for="">13:00</label>
-                            <input type="radio" name="" id="">
-                            <label for="">13:30</label>
-                            <input type="radio" name="" id="">
-                            <label for="">14:00</label>
-                        </div> -->
+
                         <p class="or">OR</p>
 
                         <label for="">Dinner:</label>
-                        <select name="" id="" name="dinner">
-                            <option value="" disabled selected>Please choose a time</option>
-                            <option value="">20:30</option>
-                            <option value="">21:00</option>
-                            <option value="">21:30</option>
-                            <option value="">22:00</option>
-                            <option value="">22:30</option>
-                            <option value="">23:00</option>
-                            <option value="">23:30</option>
-                            <option value="">00:00</option>
+                        <select name="dinner">
+                            <option disabled selected>Please choose a time</option>
+                            <option>20:30</option>
+                            <option>21:00</option>
+                            <option>21:30</option>
+                            <option>22:00</option>
+                            <option>22:30</option>
+                            <option>23:00</option>
+                            <option>23:30</option>
+                            <option>00:00</option>
                         </select>
                     </div>
                 </form>
@@ -130,29 +119,29 @@
                 <h2>YOUR CONTACT DETAILS</h2>
                 <form action="">
                     <div class="modal-reservation__form-items">
-                        <label for="">First name:</label>
-                        <input type="text" required name="firstName">
+                        <label for="firstName">First name:</label>
+                        <input type="text" name="firstName" id="firstName" required>
                     </div>
                     
                     <div class="modal-reservation__form-items">
-                        <label for="">Surname:</label>
-                        <input type="text" required name="Surname">
+                        <label for="surname">Surname:</label>
+                        <input type="text" name="Surname" id="surname" required>
                     </div>
 
                     
                     <div class="modal-reservation__form-items">
-                        <label for="">Phone number:</label>
-                        <input type="tel" required>
+                        <label for="phoneNumber">Phone number:</label>
+                        <input type="tel" name="phoneNumber" id="phoneNumber" required>
                     </div>
                     
                     <div class="modal-reservation__form-items">
-                        <label for="">Email</label>
-                        <input type="email" name="" id="" required>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
                     </div>
 
                     <div class="modal-reservation__form-items">
-                        <label for="">Add a special request (optional)</label>
-                        <textarea name="" id="" cols="30" rows="2" x-webkit.speech></textarea>
+                        <label for="specialRequest">Add a special request (optional)</label>
+                        <textarea name="specialRequest" id="specialRequest" cols="30" rows="2" x-webkit.speech></textarea>
                     </div>
                     
                 </form>
@@ -169,57 +158,71 @@
                 <h2>CREDIT CARD DETAILS</h2>
                 <form action="">
                     <div class="modal-reservation__form-items">
-                        <label for="">Country:</label>
-                        <input type="text" required name="country">
+                        <label for="country">Country:</label>
+                        <input type="text" name="country" id="country" required>
                     </div>
 
                     <div class="modal-reservation__form-items">
                         <label for="">Card:</label>
                         <section class="creditCard-card">
                             <div>
-                                <label for=""><i class="fa-brands fa-cc-mastercard icon-creditCard"></i></label>
-                                <input type="radio" name="" id="">
+                                <label for="card-mastercad"><i class="fa-brands fa-cc-mastercard icon-creditCard"></i></label>
+                                <input type="radio" name="card" id="card-mastercad">
                             </div>
     
                             <div>
-                                <label for=""><i class="fa-brands fa-cc-visa icon-creditCard"></i></label>
-                                <input type="radio" name="" id="">
+                                <label for="card-visa"><i class="fa-brands fa-cc-visa icon-creditCard"></i></label>
+                                <input type="radio" name="card" id="card-visa">
                             </div>
     
                             <div>
-                                <label for=""><i class="fa-brands fa-cc-amex icon-creditCard"></i></label>
-                                <input type="radio" name="" id="">
+                                <label for="card-amex""><i class="fa-brands fa-cc-amex icon-creditCard"></i></label>
+                                <input type="radio" name="card" id="card-amex">
                             </div>
                         </section>
                     </div>
                     
                     <div class="modal-reservation__form-items">
-                        <label for="">Name on card:</label>
-                        <input type="text" required name="nameOnCard">
+                        <label for="nameOnCard">Name on card:</label>
+                        <input type="text" name="nameOnCard" id="nameOnCard" required>
                     </div>
 
                     
                     <div class="modal-reservation__form-items">
-                        <label for="">Card number:</label>
-                        <input type="text" required>
+                        <label for="cardNumber">Card number:</label>
+                        <input type="text" name="cardNumber" id="cardNumber" required>
                     </div>
                     
                     <div class="modal-reservation__form-items">
-                        <label for="">Expiration date:</label>
-                        <input type="text" required placeholder="mm/yy">
+                        <label for="expirationDate">Expiration date:</label>
+                        <input type="text" name="expirationDate" id="expirationDate" required placeholder="mm/yy">
                     </div>
 
                     <div class="modal-reservation__form-items">
-                        <label for="">CVC:</label>
-                        <input type="text" required>
+                        <label for="cvc">CVC:</label>
+                        <input type="text" name="cvc" id="cvc" required>
                     </div>
                     
                 </form>
                 <p>Check that all the options were entered correctly and then click confirm</p>
-                <button type="submit"><a href="#title-reservation">Confirm</a></button>
+                <button type="submit"><a href="#modal-reser4">Confirm</a></button>
 
                 <a href="#modal-reser2" class="form-back"><i class="fa-solid fa-arrow-left"></i></a>
                 <a href="#title-reservation" class="form-exit"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+        </section>
+
+        <section id="modal-reser4" class="modal-reservation">
+            <div class="modal-container reservation-confirmed">
+                <h2>RESERVATION CONFIRMED</h2>
+
+                <div class="modal-reservation__p">
+                    <p>Your reservation was made successfully, do not forget to read the part of: "Important dining information" that is found on this page.</p>
+                    <p>Thank you for choosing us.</p>
+                    <p>IniciaFood Restaurant</p>
+                </div>
+
+                <button type="submit" class="form-ok"><a href="#title-reservation">Ok</a></button>
             </div>
         </section>
     </main>
@@ -229,20 +232,28 @@
         <p class="nameTeam">Rocket-Devs Agency</p>
         <div class="container-team">
             <div class="container-team-bri">
-                <p>Brisa Álvarez</p>
-                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/bbrialvarez" target="_blank">
+                    <p>Brisa Álvarez</p>
+                    <i class="fa-brands fa-github"></i>
+                </a>
             </div>
             <div class="container-team-cris">
-                <p>Cristian Mansilla</p>
-                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/CristianMansilla" target="_blank">
+                    <p>Cristian Mansilla</p>
+                    <i class="fa-brands fa-github"></i>
+                </a>
             </div>
             <div class="container-team-dai">
-                <p>Daiana Mercado</p>
-                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/DaiM24" target="_blank">
+                    <p>Daiana Mercado</p>
+                    <i class="fa-brands fa-github"></i>
+                </a>
             </div>
             <div class="container-team-mauri">
-                <p>Mauricio Rivalta</p>
-                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/mauriciorivalta" target="_blank">
+                    <p>Mauricio Rivalta</p>
+                    <i class="fa-brands fa-github"></i>
+                </a>
             </div>
         </div>
     </footer>
