@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reservation.css">
-    <link rel="icon" href="../assets/img/iniciaFoodLogo.png">
+    <link rel="icon" href="../assets/img/logo_restaurant.jpeg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>Vouchers - IniciaFood</title>
 </head>
@@ -30,206 +30,155 @@
     </header>
 
     <main>
-        <div class="container-image__main">
-            <h2 id="title-reservation">VOUCHERS</h2>
-        </div>
-
-        <div class="container-information__main">
-            <h3>What to know before you go</h3>
-
-            <div class="container-information__main-info">
-                <h4>Important dining information</h4>
-                <p>We kindly require your credit card details to secure your booking. Please notify us of any change of plans at least 24 hours prior to your reservation. If we don't hear from you at least 24 hours prior to your booking, or in the event of a no show, you will be charged $10 USD per head late notice fee.</p>
-                <p>We have a 15 minute grace period. Please call us if you are running later than 15 minutes after your booked time.</p>
-                <p>We may contact you about this booking, so please ensure your email and phone number are up to date.</p>
-            </div>
-        </div>
-
-        <a href="#modal-reser" class="main-a"><button class="main-button">Continue</button></a>
-
-        <section id="modal-reser" class="modal-reservation">
-            <div class="modal-container">
-                <h2>MAKE YOUR SELECTION</h2>
-                <form action="">
-                    <div class="modal-reservation__form-items">
-                        <label for="">Number of guests:</label>
-                        <select name="numberofGuests" required>
-                            <option>1 Guest</option>
-                            <option>2 Guests</option>
-                            <option>3 Guests</option>
-                            <option>4 Guests</option>
-                            <option>5 Guests</option>
-                            <option>6 Guests</option>
-                            <option>7 Guests</option>
-                            <option>8 Guests</option>
-                            <option>9 Guests</option>
-                            <option>10 Guests</option>
-                        </select>
-                    </div>
-                    
-                    <div class="modal-reservation__form-items">
-                        <label for="dateToDine">Date to dine:</label>
-                        <input type="date" name="dateToDine" id="dateToDine" required>
-                    </div>
-
-                    
-                    <div class="modal-reservation__form-items">
-                        <label for="">Place:</label>
-                        <select name="place" required>
-                            <option disabled selected>Please choose an area</option>
-                            <option>Area 1</option>
-                            <option>Area 2</option>
-                        </select>
-                    </div>
-                    
-                    <div class="modal-reservation__form-items">
-                        <label for="">Time to dine</label>
-
-                        <label for="">Lunch:</label>
-                        <select name="lunch">
-                            <option disabled selected>Please choose a time</option>
-                            <option>11:30</option>
-                            <option>12:00</option>
-                            <option>12:30</option>
-                            <option>13:00</option>
-                            <option>13:30</option>
-                            <option>14:00</option>
-                        </select>
-
-                        <p class="or">OR</p>
-
-                        <label for="">Dinner:</label>
-                        <select name="dinner">
-                            <option disabled selected>Please choose a time</option>
-                            <option>20:30</option>
-                            <option>21:00</option>
-                            <option>21:30</option>
-                            <option>22:00</option>
-                            <option>22:30</option>
-                            <option>23:00</option>
-                            <option>23:30</option>
-                            <option>00:00</option>
-                        </select>
-                    </div>
-                </form>
-                <a href="#modal-reser2"><button type="submit">Continue</button></a>
-
-                <a href="#title-reservation" class="form-exit"><i class="fa-solid fa-xmark"></i></a>
-            </div>
+        <section class="container-image__main vouchers">
+            <h2 id="vouchers">VOUCHERS</h2>
         </section>
 
-        <section id="modal-reser2" class="modal-reservation">
-            <div class="modal-container">
-                <h2>YOUR CONTACT DETAILS</h2>
-                <form action="">
-                    <div class="modal-reservation__form-items">
-                        <label for="firstName">First name:</label>
-                        <input type="text" name="firstName" id="firstName" required>
+        <section class="container-information__main vouchers_information">
+            <h3>Got your vouchers for this week here.</h3>
+            <h3>Important discounts, do not miss them!</h3>
+
+            <div class="cardsContainer">
+                <div class="cardVoucher">
+                    <div class="cardVoucher__image voucher1">
+                        <!-- <img src="../assets/img/voucher.jpg" alt=""> -->
                     </div>
-                    
-                    <div class="modal-reservation__form-items">
-                        <label for="surname">Surname:</label>
-                        <input type="text" name="Surname" id="surname" required>
+                    <div class="cardVoucher__info">
+                        <h4>The IniciaFood $500 Gift Voucher</h4>
+                        <p>Enjoy a unique experience and exquisite meals at IniciaFood Restaurant!</p>
                     </div>
-
-                    
-                    <div class="modal-reservation__form-items">
-                        <label for="phoneNumber">Phone number:</label>
-                        <input type="tel" name="phoneNumber" id="phoneNumber" required>
+                    <div class="cardVoucher__buy">
+                        <p>Price: <span>$250</span></p>
+                        <a href="#voucher1">Get</a>
                     </div>
-                    
-                    <div class="modal-reservation__form-items">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" required>
-                    </div>
-
-                    <div class="modal-reservation__form-items">
-                        <label for="specialRequest">Add a special request (optional)</label>
-                        <textarea class="textarea" name="specialRequest" id="specialRequest" cols="30" rows="2" x-webkit.speech></textarea>
-                    </div>
-                    
-                </form>
-
-                <a href="#modal-reser3"><button type="submit">Reserve</button></a>
-
-                <a href="#modal-reser" class="form-back"><i class="fa-solid fa-arrow-left"></i></a>
-                <a href="#title-reservation" class="form-exit"><i class="fa-solid fa-xmark"></i></a>
-            </div>
-        </section>
-
-        <section id="modal-reser3" class="modal-reservation">
-            <div class="modal-container">
-                <h2>CREDIT CARD DETAILS</h2>
-                <form action="">
-                    <div class="modal-reservation__form-items">
-                        <label for="country">Country:</label>
-                        <input type="text" name="country" id="country" required>
-                    </div>
-
-                    <div class="modal-reservation__form-items">
-                        <label for="">Card:</label>
-                        <section class="creditCard-card">
-                            <div>
-                                <label for="card-mastercad"><i class="fa-brands fa-cc-mastercard icon-creditCard"></i></label>
-                                <input type="radio" name="card" id="card-mastercad">
-                            </div>
-    
-                            <div>
-                                <label for="card-visa"><i class="fa-brands fa-cc-visa icon-creditCard"></i></label>
-                                <input type="radio" name="card" id="card-visa">
-                            </div>
-    
-                            <div>
-                                <label for="card-amex""><i class="fa-brands fa-cc-amex icon-creditCard"></i></label>
-                                <input type="radio" name="card" id="card-amex">
-                            </div>
-                        </section>
-                    </div>
-                    
-                    <div class="modal-reservation__form-items">
-                        <label for="nameOnCard">Name on card:</label>
-                        <input type="text" name="nameOnCard" id="nameOnCard" required>
-                    </div>
-
-                    
-                    <div class="modal-reservation__form-items">
-                        <label for="cardNumber">Card number:</label>
-                        <input type="text" name="cardNumber" id="cardNumber" required>
-                    </div>
-                    
-                    <div class="modal-reservation__form-items">
-                        <label for="expirationDate">Expiration date:</label>
-                        <input type="text" name="expirationDate" id="expirationDate" required placeholder="mm/yy">
-                    </div>
-
-                    <div class="modal-reservation__form-items">
-                        <label for="cvc">CVC:</label>
-                        <input type="text" name="cvc" id="cvc" required>
-                    </div>
-                    
-                </form>
-                <p>Check that all the options were entered correctly and then click confirm</p>
-
-                <a href="#modal-reser4"><button type="submit">Confirm</button></a>
-
-                <a href="#modal-reser2" class="form-back"><i class="fa-solid fa-arrow-left"></i></a>
-                <a href="#title-reservation" class="form-exit"><i class="fa-solid fa-xmark"></i></a>
-            </div>
-        </section>
-
-        <section id="modal-reser4" class="modal-reservation">
-            <div class="modal-container reservation-confirmed">
-                <h2>RESERVATION CONFIRMED</h2>
-
-                <div class="modal-reservation__p">
-                    <p>Your reservation was made successfully, do not forget to read the part of: "Important dining information" that is found on this page.</p>
-                    <p>Thank you for choosing us.</p>
-                    <p>IniciaFood Restaurant</p>
                 </div>
 
-                <a href="#title-reservation"><button type="submit" class="form-ok">Ok</button></a>
+                <div class="cardVoucher">
+                    <div class="cardVoucher__image voucher2">
+                        <!-- <img src="../assets/img/voucher2.jpg" alt=""> -->
+                    </div>
+                    <div class="cardVoucher__info">
+                        <h4>The IniciaFood $1000 Gift Voucher</h4>
+                        <p>Enjoy a unique experience and exquisite meals at IniciaFood Restaurant!</p>
+                    </div>
+                    <div class="cardVoucher__buy">
+                        <p>Price: <span>$500</span></p>
+                        <a href="#voucher2">Get</a>
+                    </div>
+                </div>
+
+                <div class="cardVoucher">
+                    <div class="cardVoucher__image voucher3">
+                        <!-- <img src="../assets/img/voucher3.jpg" alt=""> -->
+                    </div>
+                    <div class="cardVoucher__info">
+                        <h4>The IniciaFood birthday</h4>
+                        <p>If you come to eat with your friends on your birthday, you get a 50% discount of the total presenting this coupon.</p>
+                    </div>
+                    <div class="cardVoucher__buy">
+                        <p>Price: <span>$0</span></p>
+                        <a href="#voucher3">Get</a>
+                    </div>
+                </div>
+
+                <div class="cardVoucher">
+                    <div class="cardVoucher__image voucher4">
+                        <!-- <img src="../assets/img/voucher4.jpg" alt=""> -->
+                    </div>
+                    <div class="cardVoucher__info">
+                        <h4>The IniciaFood holiday</h4>
+                        <p>Every holiday 30% discount on drinks with this coupon.</p>
+                    </div>
+                    <div class="cardVoucher__buy">
+                        <p>Price: <span>$0</span></p>
+                        <a href="#voucher4">Get</a>
+                    </div>
+                </div>
+
+                <div class="cardVoucher">
+                    <div class="cardVoucher__image voucher5">
+                        <!-- <img src="../assets/img/voucher5.jpg" alt=""> -->
+                    </div>
+                    <div class="cardVoucher__info">
+                        <h4>The IniciaFood friday</h4>
+                        <p>Every Friday $100 discount if you spend more than $1000.</p>
+                    </div>
+                    <div class="cardVoucher__buy">
+                        <p>Price: <span>$10</span></p>
+                        <a href="#voucher5">Get</a>
+                    </div>
+                </div>
+
+                <div class="cardVoucher">
+                    <div class="cardVoucher__image voucher6">
+                        <!-- <img src="../assets/img/voucher6.jpg" alt=""> -->
+                    </div>
+                    <div class="cardVoucher__info card__disabled">
+                        <h4>The IniciaFood flash discount</h4>
+                        <p>20% discount on the total bill.</p>
+                        <p>Hurry up to get it, it will only be active for half an hour.</p>
+                    </div>
+                    <div class="cardVoucher__buy buy__disabled">
+                        <p>Price: <span>Free</span></p>
+                        <a href="#voucher6" class="buy__disabled">Buy</a>
+                    </div>
+                </div>
             </div>
         </section>
+
+        <section id="voucher1" class="modal-reservation">
+            <div class="modal-container">
+                <h2>YOUR CODE IS</h2>
+                <p class="code">#21254789</p>
+                <p>Present the code to the waiter/waitress to get the discount.</p>
+                <a href="#vouchers"><button type="submit">I got it</button></a>
+            </div>
+        </section>
+
+        <section id="voucher2" class="modal-reservation">
+            <div class="modal-container">
+                <h2>YOUR CODE IS</h2>
+                <p class="code">#01457460</p>
+                <p>Present the code to the waiter/waitress to get the discount.</p>
+                <a href="#vouchers"><button type="submit">I got it</button></a>
+            </div>
+        </section>
+
+        <section id="voucher3" class="modal-reservation">
+            <div class="modal-container">
+                <h2>YOUR CODE IS</h2>
+                <p class="code">#45671233</p>
+                <p>Present the code to the waiter/waitress to get the discount.</p>
+                <a href="#vouchers"><button type="submit">I got it</button></a>
+            </div>
+        </section>
+
+        <section id="voucher4" class="modal-reservation">
+            <div class="modal-container">
+                <h2>YOUR CODE IS</h2>
+                <p class="code">#98721487</p>
+                <p>Present the code to the waiter/waitress to get the discount.</p>
+                <a href="#vouchers"><button type="submit">I got it</button></a>
+            </div>
+        </section>
+
+        <section id="voucher5" class="modal-reservation">
+            <div class="modal-container">
+                <h2>YOUR CODE IS</h2>
+                <p class="code">#33841097</p>
+                <p>Present the code to the waiter/waitress to get the discount.</p>
+                <a href="#vouchers"><button type="submit">I got it</button></a>
+            </div>
+        </section>
+
+        <!-- <section id="voucher6" class="modal-reservation">
+            <div class="modal-container">
+                <h2>YOUR CODE IS</h2>
+                <p class="code">#17435189</p>
+                <p>Present the code to the waiter/waitress to get the discount.</p>
+                <a href="#vouchers"><button type="submit">I got it</button></a>
+            </div>
+        </section> -->
     </main>
 
     <footer>
