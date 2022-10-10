@@ -55,6 +55,7 @@ header{
 .logo-image{
     width: 150px;
     margin-top: 10px;
+    border-radius: 50%;
 }
 
 .logo-title{
@@ -95,7 +96,6 @@ nav>ul>li>a:hover{
 }*/
 
 /** Styles MENU **/
-
 .img-menu {
     background-image: url(https://hospitalityinsights.ehl.edu/hubfs/Blog-EHL-Insights/Blog-Header-EHL-Insights/culinary%20arts.jpeg);
     background-repeat: no-repeat;
@@ -108,12 +108,14 @@ nav>ul>li>a:hover{
     justify-content: center;
    opacity: 0.8;
 }
+
 .description-menu {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 500px;
 }
+
 .p-menu  {
     width: 60%;
     font-size: 16px;
@@ -121,35 +123,39 @@ nav>ul>li>a:hover{
 }
 /*STARTERS*/
 .title-menu {
-    /*background-color: rgba(0, 0, 0,0.5);*/
-    padding: 20px 0px;
+    margin: 0px 10px 60px 0px;
     text-align: center; 
+    font-size: 25px;
 }
 
 div > .img-starters > img {
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    
- }
+}
+
 .container-menu-starters {
     display: grid; 
     grid-template-columns: 1fr 2fr;
     column-gap: 2em;
     padding: 40px;
     background-color: #947654;
+    align-items: center;
 }
+
 .container-starters {
     display: grid; 
     grid-template-columns: repeat(3,1fr); 
     column-gap: 2.5em;
 }
+
 .title-starters {
     grid-column: 1/4; 
     text-align: center;
     font-size: 25px;
     padding-top: 40px;
 }
+
 .botton-table {
     grid-column:1/2 ;
     background-color:#000000;
@@ -157,13 +163,17 @@ div > .img-starters > img {
     border-radius: 10px;
     height: 40px;
     margin-top: 20px;
+    opacity: 0.9;
+    border: none;
+    
 }
+
 .botton-table:hover, .botton-download:hover {
     background-color:#ffffff;
     color:#000000;
     font-weight: bold;
-    border-style: none;
 }
+
 .botton-download {
     grid-column: 3/4;
     background-color:#000000;
@@ -171,6 +181,7 @@ div > .img-starters > img {
     border-radius: 10px;
     border-style: none;
     margin-top: 20px;
+    opacity: 0.9;
 }
 
 .h4-starters {
@@ -179,16 +190,16 @@ div > .img-starters > img {
 span {
     font-family: italic;
 }
-/*NEW MENU*/
-
+/*mains*/
 .container-menu-mains {
     display: grid; 
     grid-template-columns: 2fr 1fr;
     column-gap: 2em;
     padding: 40px;
     background-color: #947654;
-    margin-bottom: 100px; /*separador*/
+    align-items: center;
 }
+
 .container-mains {
     display: grid; 
     grid-template-columns: repeat(3,1fr); 
@@ -200,7 +211,6 @@ span {
     font-size: 25px;
     padding-top: 40px;
 }
-/*-----------------*/
 .container-plates {
     display: grid;
     grid-template-columns: repeat(5,1fr);
@@ -210,7 +220,15 @@ span {
 .plate > img{
     height: 200px;
     width: 100%;
-    
+}
+.plate:hover {
+    transform: scale(1,1.3);
+    width: 300px;
+    transition: ease-in 200ms;
+}
+/*drinks*/
+.p-drinks {
+    margin-top: 10px;
 }
 
 /** Footer **/
