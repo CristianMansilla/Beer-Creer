@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --brown: #947654;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+/** Etiquetas generales **/
+body{
+    color: var(--white);
+    font-family: 'Signika Negative', sans-serif;
+    /*font-family: 'Barlow Semi Condensed', sans-serif;*/
+    font-size: 14px;
+    background-color: var(--black);
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+li{
+    list-style: none;
+}
+
+/** Navbar **/
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.705);
+    padding: 0 3em;
+    border-bottom: .6em solid #947654a0;
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-image{
+    width: 150px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+
+.logo-title{
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 11ch;
+    margin-bottom: 10px;
+    animation: typing 2s steps(10), blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing{
+    from{width: 0;}
+}
+
+@keyframes blink{
+    50%{border-color: transparent;}
+}
+
+nav>ul{
+    display: flex;
+    align-items: center;
+    gap: 3em;
+    text-transform: uppercase;
+}
+
+nav>ul>li>a:hover{
+    color: var(--brown);
+}
+/*styles HOME*/
+/*.img-menu {
+    background-image: url(./img/gif_menu2.jpg);
+    background-position-y: 70%;
+    width: 100%;
+    height: 500px;
+}*/
+
+/** Styles MENU **/
+.img-menu {
+    background-image: url(https://hospitalityinsights.ehl.edu/hubfs/Blog-EHL-Insights/Blog-Header-EHL-Insights/culinary%20arts.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 92%;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   opacity: 0.8;
+}
+
+.description-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.p-menu  {
+    width: 60%;
+    font-size: 16px;
+    text-align: center;
+}
+/*STARTERS*/
+.title-menu {
+    margin: 0px 10px 60px 0px;
+    text-align: center; 
+    font-size: 25px;
+}
+
+div > .img-starters > img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+.container-menu-starters {
+    display: grid; 
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2em;
+    padding: 40px;
+    background-color: #947654;
+    align-items: center;
+}
+
+.container-starters {
+    display: grid; 
+    grid-template-columns: repeat(3,1fr); 
+    column-gap: 2.5em;
+}
+
+.title-starters {
+    grid-column: 1/4; 
+    text-align: center;
+    font-size: 25px;
+    padding-top: 40px;
+}
+
+.botton-table {
+    grid-column:1/2 ;
+    background-color:#000000;
+    color: #ffffff;
+    border-radius: 10px;
+    height: 40px;
+    margin-top: 20px;
+    opacity: 0.9;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.botton-table:hover, .botton-download:hover {
+    background-color:#ffffff;
+    color:#000000;
+    font-weight: bold;
+}
+
+.botton-download {
+    grid-column: 3/4;
+    background-color:#000000;
+    color: #ffffff;
+    border-radius: 10px;
+    border-style: none;
+    margin-top: 20px;
+    opacity: 0.9;
+    width: 10em;
+}
+
+.h4-starters {
+    margin-top: 30px;
+}
+span {
+    font-family: italic;
+}
+/*mains*/
+.container-menu-mains {
+    display: grid; 
+    grid-template-columns: 2fr 1fr;
+    column-gap: 2em;
+    padding: 40px;
+    background-color: #947654;
+    align-items: center;
+}
+
+.container-mains {
+    display: grid; 
+    grid-template-columns: repeat(3,1fr); 
+    column-gap: 2.5em;
+}
+.title-mains {
+    grid-column: 1/4; 
+    text-align: center;
+    font-size: 25px;
+    padding-top: 40px;
+}
+.container-plates {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin: 200px 0px;
+    
+}
+.plate > img{
+    height: 200px;
+    width: 100%;
+}
+.plate:hover {
+    transform: scale(1,1.3);
+    width: 300px;
+    transition: ease-in 200ms;
+}
+/*drinks*/
+.p-drinks {
+    margin-top: 10px;
+}
+.style-i {
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/** Footer **/
+footer{
+    background-color: #947654;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+footer>p:nth-of-type(2){
+    background-color: rgba(255, 0, 0, 0.251);
+    margin: 1em 0;
+}
+
+.nameTeam{
+    text-align: start;
+}
+
+.container-team{
+    display: grid;
+    grid-template-columns: repeat(4);
+    width: 100%;
+    justify-content: center;
+    gap: 8em;
+}
+
+.container-team-bri{
+    grid-column: 1;
+    display: flex;
+    gap: .5em;
+}
+
+.container-team-cris{
+    grid-column: 2;
+    display: flex;
+    gap: .5em;
+}
+
+.container-team-dai{
+    grid-column: 3;
+    display: flex;
+    gap: .5em;
+}
+
+.container-team-mauri{
+    grid-column: 4;
+    display: flex;
+    gap: .5em;
+}
+
+*Home Page*/
+h2.tile1-home{
+    margin-top: 15%;
+    padding-bottom: 5%;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    }
+    .presentation-section{
+        margin-left: 20%;
+        margin-right: 20%;
+        padding-bottom: 6%;
+        }
+    .presentation-member-1{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 50% 50%;
+        padding: 5%;
+        margin-bottom: 4%;
+        background-color: #947654;
+        border-radius: 0% 15%;
+        color: black;
+        transition: all 300ms ease;
+    }
+    .presentation-member-1:hover{
+        margin-left: -5%;
+        margin-right: -5%;
+        padding: 8%;
+    }    
+    .presentation-member-2{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 5%;
+        margin-bottom: 4%;
+        background-color: #ffffff;
+        border-radius: 0% 15%;
+        color: black;
+        transition: all 300ms ease;
+
+    }   
+    .presentation-member-2:hover{
+        margin-left: -5%;
+        margin-right: -5%;
+        padding: 8%;
+    }    
+.img-home{
+    width: 200px;
+    height: 120px;
+    margin-left: 10%;
+}
+
+    h2.title2-home{
+        justify-content: center;
+        text-align: center;
+        font-size: 40px;
+        padding-bottom: 3%;
+        
+    }
+    .iniciatec-info-section{
+        background-color: #947654;
+        color: #ffffff;
+        width: 100%;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .iniciatec-info-img{
+      display: grid;
+      grid-template-columns: 70% 30%;
+      justify-content: center;
+      align-items: center;
+      margin-left: 10%;
+      margin-right: 10%; 
+      font-size: 20px;   
+      font-weight: 400;
+    }
+    
+    img.iniciatec-picture{
+        display: flex;
+        height: 30vh;
+        width: 15vw;
+    }
+    p.p2-home{
+        justify-content:start;
+        text-align: center;
+        margin-right: 6%;
+    }
+
+    
+    
+    .contact-form-section{
+        width: 100%;
+        height: 500px;
+        max-width: 1100px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 50px;
+        margin-top: 15%;
+        margin-bottom: 10%;
+
+    }
+.title3-home{
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+.info-form a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-weight: 700;
+}
+form .campo, textarea{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 10px;
+    border: 1px solid #947654;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+input.btn-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background-color: #947654;
+    color: #ffffff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+input.btn-enviar:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+ 
