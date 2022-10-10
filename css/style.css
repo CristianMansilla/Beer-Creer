@@ -111,6 +111,7 @@ nav>ul>li>a:hover{
 
 .description-menu {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 500px;
@@ -165,7 +166,8 @@ div > .img-starters > img {
     margin-top: 20px;
     opacity: 0.9;
     border: none;
-    
+    padding: 1em;
+    cursor: pointer;
 }
 
 .botton-table:hover, .botton-download:hover {
@@ -182,6 +184,7 @@ div > .img-starters > img {
     border-style: none;
     margin-top: 20px;
     opacity: 0.9;
+    width: 10em;
 }
 
 .h4-starters {
@@ -228,6 +231,11 @@ span {
 }
 /*drinks*/
 .p-drinks {
+    margin-top: 10px;
+}
+.style-i {
+    color: #ffffff;
+    font-size: 20px;
     margin-top: 10px;
 }
 
