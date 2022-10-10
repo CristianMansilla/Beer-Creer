@@ -13,10 +13,10 @@ main{
 }
 
 .container-image__main{
-    height: 20em;
-    background-image: url(./img/food1.jpg);
+    height: 35em;
+    background-image: url(../assets/img/restaurant2.jpg);
     background-repeat: no-repeat;
-    background-position-y: 40%;
+    background-position-y: 70%;
     background-size: cover;
     position: relative;
     display: flex;
@@ -26,6 +26,7 @@ main{
     position: absolute;
     text-align: center;
     margin: 1em 0;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -35,6 +36,7 @@ main{
     width: 80%;
     margin: auto;
     text-align: justify;
+    padding: 4em;
 }
 
 .container-information__main>h3{
@@ -57,7 +59,8 @@ main{
 }
 
 .main-a{
-    margin: auto;
+    margin: -1em auto 2em;
+    /* margin-bottom: 1em; */
 }
 
 .main-button{
@@ -182,7 +185,7 @@ button{
     margin-bottom: 1em;
 }
 
-.modal-reservation__form-items>textarea{
+.modal-reservation__form-items>.textarea{
     resize: none;
 }
 
