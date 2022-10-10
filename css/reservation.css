@@ -30,7 +30,9 @@ main{
     top: 10%;
     left: 50%;
     transform: translateX(-50%);
+    margin-left: -1em;
 }
+
 
 .container-information__main{
     /* background-color: red; */
