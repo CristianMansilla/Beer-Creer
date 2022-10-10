@@ -13,7 +13,7 @@
     <header>
         <nav class="container-nav">
             <div class="logo">
-                <img class="logo-image" src="../assets/img/iniciaFoodLogo.png" alt="Logo IniciaFood">
+                <img class="logo-image" src="../assets/img/iniciaFoodLogo1.jpeg" alt="Logo IniciaFood">
                 <span class="logo-title">IniciaFood</span>
             </div>
             
@@ -27,17 +27,203 @@
 
     <main>
         <div class="container-image__main">
-            <h2 id="title-reservation">Reserve a table</h2>
+            <h2 id="title-reservation">RESERVE A TABLE</h2>
         </div>
-        <p>Please note: We kindly require your credit card details to secure your booking. Please notify us of any change of plans at least 24 hours prior to your reservation. If we don’t hear from you at least 24 hours prior to your booking, or in the event of a no show, you will be charged $10 USD per head late notice fee.</p>
-        <button><a href="#modal-reser">Continue</a></button>
+
+        <div class="container-information__main">
+            <h3>What to know before you go</h3>
+
+            <div class="container-information__main-info">
+                <h4>Important dining information</h4>
+                <p>We kindly require your credit card details to secure your booking. Please notify us of any change of plans at least 24 hours prior to your reservation. If we don't hear from you at least 24 hours prior to your booking, or in the event of a no show, you will be charged $10 USD per head late notice fee.</p>
+                <p>We have a 15 minute grace period. Please call us if you are running later than 15 minutes after your booked time.</p>
+                <p>We may contact you about this booking, so please ensure your email and phone number are up to date.</p>
+            </div>
+        </div>
+
+        <a href="#modal-reser" class="main-a"><button class="main-button">Continue</button></a>
 
         <section id="modal-reser" class="modal-reservation">
             <div class="modal-container">
                 <h2>MAKE YOUR SELECTION</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi aperiam fuga rerum sunt veritatis tempore, dicta numquam quod, quo, sapiente amet! Dignissimos a molestias libero laudantium? Voluptates eveniet ad dolore fugit. Accusamus praesentium ab tempora tempore magni nesciunt vitae nobis consequatur maiores asperiores, aperiam eum et quod nulla quaerat at.</p>
+                <form action="">
+                    <div class="modal-reservation__form-items">
+                        <label for="">Number of guests:</label>
+                        <select name="numberofGuests" required>
+                            <option>1 Guest</option>
+                            <option>2 Guests</option>
+                            <option>3 Guests</option>
+                            <option>4 Guests</option>
+                            <option>5 Guests</option>
+                            <option>6 Guests</option>
+                            <option>7 Guests</option>
+                            <option>8 Guests</option>
+                            <option>9 Guests</option>
+                            <option>10 Guests</option>
+                        </select>
+                    </div>
+                    
+                    <div class="modal-reservation__form-items">
+                        <label for="dateToDine">Date to dine:</label>
+                        <input type="date" name="dateToDine" id="dateToDine" required>
+                    </div>
 
-                <button><a href="#title-reservation">Close</a></button>
+                    
+                    <div class="modal-reservation__form-items">
+                        <label for="">Place:</label>
+                        <select name="place" required>
+                            <option disabled selected>Please choose an area</option>
+                            <option>Area 1</option>
+                            <option>Area 2</option>
+                        </select>
+                    </div>
+                    
+                    <div class="modal-reservation__form-items">
+                        <label for="">Time to dine</label>
+
+                        <label for="">Lunch:</label>
+                        <select name="lunch">
+                            <option disabled selected>Please choose a time</option>
+                            <option>11:30</option>
+                            <option>12:00</option>
+                            <option>12:30</option>
+                            <option>13:00</option>
+                            <option>13:30</option>
+                            <option>14:00</option>
+                        </select>
+
+                        <p class="or">OR</p>
+
+                        <label for="">Dinner:</label>
+                        <select name="dinner">
+                            <option disabled selected>Please choose a time</option>
+                            <option>20:30</option>
+                            <option>21:00</option>
+                            <option>21:30</option>
+                            <option>22:00</option>
+                            <option>22:30</option>
+                            <option>23:00</option>
+                            <option>23:30</option>
+                            <option>00:00</option>
+                        </select>
+                    </div>
+                </form>
+                <a href="#modal-reser2"><button type="submit">Continue</button></a>
+
+                <a href="#title-reservation" class="form-exit"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+        </section>
+
+        <section id="modal-reser2" class="modal-reservation">
+            <div class="modal-container">
+                <h2>YOUR CONTACT DETAILS</h2>
+                <form action="">
+                    <div class="modal-reservation__form-items">
+                        <label for="firstName">First name:</label>
+                        <input type="text" name="firstName" id="firstName" required>
+                    </div>
+                    
+                    <div class="modal-reservation__form-items">
+                        <label for="surname">Surname:</label>
+                        <input type="text" name="Surname" id="surname" required>
+                    </div>
+
+                    
+                    <div class="modal-reservation__form-items">
+                        <label for="phoneNumber">Phone number:</label>
+                        <input type="tel" name="phoneNumber" id="phoneNumber" required>
+                    </div>
+                    
+                    <div class="modal-reservation__form-items">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+
+                    <div class="modal-reservation__form-items">
+                        <label for="specialRequest">Add a special request (optional)</label>
+                        <textarea name="specialRequest" id="specialRequest" cols="30" rows="2" x-webkit.speech></textarea>
+                    </div>
+                    
+                </form>
+
+                <a href="#modal-reser3"><button type="submit">Reserve</button></a>
+
+                <a href="#modal-reser" class="form-back"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="#title-reservation" class="form-exit"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+        </section>
+
+        <section id="modal-reser3" class="modal-reservation">
+            <div class="modal-container">
+                <h2>CREDIT CARD DETAILS</h2>
+                <form action="">
+                    <div class="modal-reservation__form-items">
+                        <label for="country">Country:</label>
+                        <input type="text" name="country" id="country" required>
+                    </div>
+
+                    <div class="modal-reservation__form-items">
+                        <label for="">Card:</label>
+                        <section class="creditCard-card">
+                            <div>
+                                <label for="card-mastercad"><i class="fa-brands fa-cc-mastercard icon-creditCard"></i></label>
+                                <input type="radio" name="card" id="card-mastercad">
+                            </div>
+    
+                            <div>
+                                <label for="card-visa"><i class="fa-brands fa-cc-visa icon-creditCard"></i></label>
+                                <input type="radio" name="card" id="card-visa">
+                            </div>
+    
+                            <div>
+                                <label for="card-amex""><i class="fa-brands fa-cc-amex icon-creditCard"></i></label>
+                                <input type="radio" name="card" id="card-amex">
+                            </div>
+                        </section>
+                    </div>
+                    
+                    <div class="modal-reservation__form-items">
+                        <label for="nameOnCard">Name on card:</label>
+                        <input type="text" name="nameOnCard" id="nameOnCard" required>
+                    </div>
+
+                    
+                    <div class="modal-reservation__form-items">
+                        <label for="cardNumber">Card number:</label>
+                        <input type="text" name="cardNumber" id="cardNumber" required>
+                    </div>
+                    
+                    <div class="modal-reservation__form-items">
+                        <label for="expirationDate">Expiration date:</label>
+                        <input type="text" name="expirationDate" id="expirationDate" required placeholder="mm/yy">
+                    </div>
+
+                    <div class="modal-reservation__form-items">
+                        <label for="cvc">CVC:</label>
+                        <input type="text" name="cvc" id="cvc" required>
+                    </div>
+                    
+                </form>
+                <p>Check that all the options were entered correctly and then click confirm</p>
+
+                <a href="#modal-reser4"><button type="submit">Confirm</button></a>
+
+                <a href="#modal-reser2" class="form-back"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="#title-reservation" class="form-exit"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+        </section>
+
+        <section id="modal-reser4" class="modal-reservation">
+            <div class="modal-container reservation-confirmed">
+                <h2>RESERVATION CONFIRMED</h2>
+
+                <div class="modal-reservation__p">
+                    <p>Your reservation was made successfully, do not forget to read the part of: "Important dining information" that is found on this page.</p>
+                    <p>Thank you for choosing us.</p>
+                    <p>IniciaFood Restaurant</p>
+                </div>
+
+                <a href="#title-reservation"><button type="submit" class="form-ok">Ok</button></a>
             </div>
         </section>
     </main>
@@ -47,20 +233,28 @@
         <p class="nameTeam">Rocket-Devs Agency</p>
         <div class="container-team">
             <div class="container-team-bri">
-                <p>Brisa Álvarez</p>
-                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/bbrialvarez" target="_blank">
+                    <p>Brisa Álvarez</p>
+                    <i class="fa-brands fa-github"></i>
+                </a>
             </div>
             <div class="container-team-cris">
-                <p>Cristian Mansilla</p>
-                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/CristianMansilla" target="_blank">
+                    <p>Cristian Mansilla</p>
+                    <i class="fa-brands fa-github"></i>
+                </a>
             </div>
             <div class="container-team-dai">
-                <p>Daiana Mercado</p>
-                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/DaiM24" target="_blank">
+                    <p>Daiana Mercado</p>
+                    <i class="fa-brands fa-github"></i>
+                </a>
             </div>
             <div class="container-team-mauri">
-                <p>Mauricio Rivalta</p>
-                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/mauriciorivalta" target="_blank">
+                    <p>Mauricio Rivalta</p>
+                    <i class="fa-brands fa-github"></i>
+                </a>
             </div>
         </div>
     </footer>
