@@ -12,7 +12,7 @@
     --black: #000000;
 }
 
-/** Etiquetas generales **/
+/** -----GENERAL----- **/
 body{
     color: var(--white);
     font-family: 'Signika Negative', sans-serif;
@@ -35,7 +35,7 @@ main{
     /* height: 100Vh; */
 }
 
-/** Navbar **/
+/** -----NAVBAR----- **/
 header{
     position: sticky;
     top: 0;
@@ -93,7 +93,7 @@ nav>ul>li>a:hover{
     color: var(--brown);
 }
 
-/** Home Page **/
+/** -----HOME PAGE----- **/
 h2.tile1-home{
     margin-top: 1em;
     padding-bottom: 5%;
@@ -144,7 +144,6 @@ h2.tile1-home{
     border-radius: 0% 15%;
     color: black;
     transition: all 300ms ease;
-
 }
 
 .presentation-member-2:hover{
@@ -157,6 +156,7 @@ h2.tile1-home{
     width: 90%;
     margin: auto;
 }
+
 .img-home {
     margin-left: 25%;
 }
@@ -178,10 +178,12 @@ h2.title2-home{
     font-size: 40px;
     padding-bottom: 3%;
 }
+
 .iniciatec-info-section {
     background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(90, 10, 136));
     padding: 70px 0px;
 }
+
 .iniciatec-info-img {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -190,6 +192,7 @@ h2.title2-home{
     margin: auto;
     justify-content: center;
 }
+
 .iniciatec-info-img .iframe-inicitec, 
 .iniciatec-info-img .description-iniciatec{
     display: flex;
@@ -337,7 +340,8 @@ input.btn-enviar:hover {
     background-color: #ffffff;
     color: #000000;
 }
-/** Styles MENU **/
+
+/** -----MENU----- **/
 .img-menu {
     background-image: url(https://hospitalityinsights.ehl.edu/hubfs/Blog-EHL-Insights/Blog-Header-EHL-Insights/culinary%20arts.jpeg);
     background-repeat: no-repeat;
@@ -367,7 +371,7 @@ input.btn-enviar:hover {
 
 /*STARTERS*/
 .title-menu {
-    margin: 0px 10px 60px 0px;
+    margin: 0px 10px 60px -1em;
     text-align: center; 
     font-size: 25px;
 }
@@ -489,10 +493,85 @@ span {
     font-size: 20px;
     margin-top: 10px;
 }
-/* IMPACT */
+
+/** -----BOOK TABLE----- **/
+main{
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+}
+
+.container-image__main{
+    height: 35em;
+    background-image: url(../assets/img/restaurant2.jpg);
+    background-repeat: no-repeat;
+    background-position-y: 70%;
+    background-size: cover;
+    position: relative;
+    display: flex;
+}
+
+.container-image__main>h2{
+    position: absolute;
+    text-align: center;
+    margin: 1em 0;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: -1em;
+}
+
+
+.container-information__main{
+    /* background-color: red; */
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+    padding: 4em;
+}
+
+.container-information__main>h3{
+    margin-bottom: .5em;
+    text-align: center;
+}
+
+.container-information__main-info{
+    border: 1px solid rgba(197, 171, 38, 0.539);
+    border-radius: 1em;
+    padding: .5em;
+    width: 80%;
+    margin: auto;
+    box-shadow: 0 1em 1em rgba(199, 176, 72, 0.2);
+}
+
+
+.container-information__main-info>h4{
+    margin-bottom: .3em;
+}
+
+.main-a{
+    margin: -1em auto 2em;
+    /* margin-bottom: 1em; */
+}
+
+.main-button{
+    background-color: var(--brown);
+    color: var(--white);
+    padding: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.main-button:hover{
+    background: #556270;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF6B6B, #556270);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF6B6B, #556270); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/** -----IMPACT----- **/
 .img-impact {
     background-image: url(../assets/img/impact/tierra_manos_1.png);
-    background-position-x: 52%;
+    background-position-x: 60%;
     background-position-y: 50% ;
     width: 100%;
     height: 500px;
@@ -501,9 +580,12 @@ span {
     justify-content: center;
     opacity: 0.8;
 }
+
 .title-impact {
     font-size: 25px;
+    margin: 1.5em 0 0 -1.2em;
 }
+
 .description-impact {
     display: flex;
     flex-direction: column;
@@ -514,12 +596,14 @@ span {
     margin: auto;
     text-align: center;
 }
+
 .container-impact {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     margin: 0px 20px;
     row-gap: 6em;
 }
+
 .container-impact div {
     background-color: #947654;
     padding:40px;
@@ -534,19 +618,23 @@ span {
     height: 300px;
     box-shadow: rgb(105, 83, 53) 0px 20px 30px -10px;
 }
+
 .h4-impact {
     margin-bottom: 15px;
 }
+
 .style-i-carrot {
     font-size: 20px;
     margin-top: 20px;
 }
+
 .p-impact {
     margin-bottom: 10px;
 }
 .p-italic {
     font-family: 'Source Sans Pro', sans-serif;
 }
+
 .title-youtube {
     margin-top: 200px;
     text-align: center;
@@ -562,6 +650,7 @@ span {
     background-color: #947654;
     padding: 50px 30px;
 }
+
 .div-iframe {
     display: flex;
     flex-direction: column;
@@ -570,6 +659,7 @@ span {
     border-radius: 40px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 .div-iframe iframe {
     height: 280px;
     width: 280px;
@@ -588,6 +678,7 @@ span {
     display: flex;
     flex-direction: column;
 }
+
 .div-map iframe, .div-map-rigth iframe {
     width: 300px;
     height: 200px;
@@ -595,11 +686,13 @@ span {
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
+
 .p-map {
     width: 200px;
     margin: 90px 90px;
     text-align: center;
 }
+
 .div-map {
     display: flex;
     align-items: center;
@@ -609,6 +702,7 @@ span {
     width: 70%;
     border-radius: 0px 160px 160px 0px;
 }
+
 .div-map-rigth {
     display: flex;
     justify-content: flex-end;
@@ -620,10 +714,132 @@ span {
     border-radius: 160px 0px 0px 160px;
 }
 
-/** CUSTOMERS **/
+/** -----VOUCHERS----- **/
+.vouchers{
+    background-image: url(../assets/img/voucher1.jpg);
+    background-position-y: 50%;
+}
+
+.vouchers_information{
+    width: 100%;
+}
+
+.cardsContainer{
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1em;
+}
+
+.cardVoucher{
+    background-color: var(--white);
+    color: var(--black);
+    width: 25em;
+    height: 25em;
+    box-shadow: 0 1em 1em rgba(199, 176, 72, 0.2);
+    margin-top: 2em;
+    border-radius: 8px;
+}
+
+.cardVoucher__image{
+    background-color: #BA8B02;
+    width: 100%;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-position-y: 70%;
+    background-size: cover;
+}
+
+.cardVoucher__image>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* .voucher1{
+    background-image: url(../assets/img/voucher.jpg);
+} */
+
+
+/* .voucher2{
+    background-image: url(../assets/img/voucher2.jpg);
+    background-position-y: 50%;
+} */
+
+
+/* .voucher3{
+    background-image: url(../assets/img/voucher3.jpg);
+} */
+
+/* .voucher4{
+    background-image: url(../assets/img/voucher4.jpg);
+} */
+
+/* .voucher5{
+    background-image: url(../assets/img/voucher5.jpg);
+} */
+
+.voucher6{
+    /* background-image: url(../assets/img/voucher6.jpg); */
+    cursor: not-allowed;
+    opacity: .5;
+}
+
+.cardVoucher__info{
+    height: 35%;
+    padding: 1em;
+}
+
+.cardVoucher__info>h4{
+    margin-bottom: 1em;
+}
+
+.cardVoucher__buy{
+    border-top: .5px solid var(--brown);
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    font-weight: bold;
+}
+
+.cardVoucher__buy>a{
+    background-color: var(--brown);
+    padding: .5em;
+    width: 4em;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.cardVoucher__buy>p>span{
+    color: var(--brown);
+    font-size: 1.5em;
+}
+
+.card__disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.buy__disabled{
+    opacity: 0.5;
+    /* pointer-events: none; */
+    cursor: not-allowed;
+}
+
+.modal-container>.code{
+    font-size: 3em;
+    margin: .5em 0;
+}
+
+/** -----CUSTOMERS----- **/
 .customer-section{
     width: 100%;
 }
+
 .title-customer-section{
     width: 100%;
     height: 650px;
@@ -636,18 +852,20 @@ span {
     text-align: center;
     margin-bottom: 4%;
 }
+
 .title1-customer{
-   font-size: 40px;
-   text-shadow: 3px 3px 1px #000000a2;
+    font-size: 40px;
+    text-shadow: 3px 3px 1px #000000a2;
 }
+
 .p1-customer{
     padding-top: 1%;
     font-size:18px;
     margin-left: 20%;
     margin-right: 20%;
     text-shadow: 2px 2px 0 #000000;
-
 }
+
 .customer-coment{
     display: flex;
     flex-direction: column;
@@ -657,31 +875,41 @@ span {
     gap: 2em;
     padding:5%;
 }
+
 .customer{
     display: grid;
     grid-template-columns: 30% 70%;
-    background-color: #ffffff;
+    background-color: #aeababf1;
     color: #000000;
     padding: 2%;
     border-radius: 8%;
     align-items:center ;
-    box-shadow: 5px 5px 6px #ffffff;
+    box-shadow: rgba(249, 249, 255, 0.189) 0px 5px 15px;
     margin-left: 0%;
     margin-right: 20%;
     transition: all 300ms ease;
 }
+
 .customer:hover{
-  padding: 3%;
-  background-color: #fffffff1;
+    /* padding: 3%; */
+    background-color: rgb(223, 217, 217);
 }
+
 .img-customer{
-    width: 190px;
-    height: 170px;
-    border-radius: 100%;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
 }
+
+.img-customer-div>img{
+    object-fit: cover;
+    object-position: 50%;
+}
+
 .info-customer{
     text-align: start;
 }
+
 .customer-2{
     display: grid;
     grid-template-columns: 70% 30%;
@@ -690,31 +918,33 @@ span {
     padding: 2%;
     border-radius: 8%;
     align-items:center ;
-    box-shadow: 5px 5px 6px #8b755c;
+    box-shadow: rgba(249, 249, 255, 0.189)  0px 5px 15px;
     margin-right: 0%;
     margin-left: 20%;
     transition: all 300ms ease;
+}
 
-}
 .customer-2:hover{
-    padding: 3%;
-    background-color: #8b755cf1;
-  
+    /* padding: 3%; */
+    background-color: #b4a594f1;
 }
+
 .info-customer-2{
     text-align: end;
 }
+
 .fa-star{
     color: rgb(255, 136, 0);
-
 }
+
 .fa-regular{
     color: rgb(255, 136, 0);
-
 }
+
 .fa-star-half-stroke{
     color: rgb(255, 136, 0);
 }
+
 .icon-div{
     color: #ffffff;
     font-size: 30px;
@@ -723,7 +953,7 @@ span {
     align-items: center;
 }
 
-/** Footer **/
+/** -----FOOTER----- **/
 footer{
     background-color: #947654;
     display: flex;
@@ -742,9 +972,6 @@ footer>p:nth-of-type(2){
 }
 
 .nameTeam:hover{
-    /* transform: rotate(360deg);
-    transition: all 4s ease; */
-
     transform: rotate(15deg);
     transition: all 0.5s ease;
 }
