@@ -30,201 +30,126 @@
     </header>
 
     <main>
-        <div class="container-image__main">
-            <h2 id="title-reservation">Reserve a table</h2>
+        <div class="img-team">
+            <h2 class="title-team">INICIATEC Project - September 22</h2>
         </div>
-
-        <div class="container-information__main">
-            <h3>What to know before you go</h3>
-    
-            <h4>Important dining information</h4>
-            <p>We kindly require your credit card details to secure your booking. Please notify us of any change of plans at least 24 hours prior to your reservation. If we don't hear from you at least 24 hours prior to your booking, or in the event of a no show, you will be charged $10 USD per head late notice fee.</p>
-            <p>We have a 15 minute grace period. Please call us if you are running later than 15 minutes after your booked time.</p>
-            <p>We may contact you about this booking, so please ensure your email and phone number are up to date.</p>
-        </div>
+        <section class="presentation-section">
+            <h3 class="h3-team">Team Members</h3>
+            <div class="presentation-member-1">
+                <div class="description-member">
+                    <p class="p1-home">
+                        Daiana Mercado Full Stack Web Developer in process. She was born in Jujuy but <i
+                            class="fa-solid fa-mountain-city"></i>, she currently live in Buenos Aires.
+                    </p>
+                    <p>She study autonomously and entered a Front-End Bootcamp <i class="fa-solid fa-computer"></i>.</p>
+                    <p>She likes to form good work environments. Her hobbies are singing and running <i class="fa-solid fa-person-running"></i>.</p>
+                </div>
+                <div class="img-member">
+                    <img class="img-home" src="./assets/img/team/Dai.jpg" alt="Dai">
+                </div>
+            </div>
         
-        <button><a href="#modal-reser">Continue</a></button>
-
-        <section id="modal-reser" class="modal-reservation">
-            <div class="modal-container">
-                <h2>MAKE YOUR SELECTION</h2>
-                <form action="">
-                    <div class="modal-reservation__form-items">
-                        <label for="">Number of guests:</label>
-                        <select name="" id="" required>
-                            <option value="">1 Guest</option>
-                            <option value="">2 Guests</option>
-                            <option value="">3 Guests</option>
-                            <option value="">4 Guests</option>
-                            <option value="">5 Guests</option>
-                            <option value="">6 Guests</option>
-                            <option value="">7 Guests</option>
-                            <option value="">8 Guests</option>
-                            <option value="">9 Guests</option>
-                            <option value="">10 Guests</option>
-                        </select>
-                    </div>
-                    
-                    <div class="modal-reservation__form-items">
-                        <label for="">Date to dine:</label>
-                        <input type="date" name="" id="" required>
-                    </div>
-
-                    
-                    <div class="modal-reservation__form-items">
-                        <label for="">Place:</label>
-                        <select name="" id="" required>
-                            <option value="" disabled selected>Please choose an area</option>
-                            <option value="">Area 1</option>
-                            <option value="">Area 2</option>
-                        </select>
-                    </div>
-                    
-                    <div class="modal-reservation__form-items">
-                        <label for="">Time to dine</label>
-
-                        <label for="">Lunch:</label>
-                        <select name="" id="" name="lunch">
-                            <option value="" disabled selected>Please choose a time</option>
-                            <option value="">11:30</option>
-                            <option value="">12:00</option>
-                            <option value="">12:30</option>
-                            <option value="">13:00</option>
-                            <option value="">13:30</option>
-                            <option value="">14:00</option>
-                        </select>
-                        <!-- <div class="timeToDine-items">
-                            <input type="radio" name="" id="">
-                            <label for="">12:00</label>
-                            <input type="radio" name="" id="">
-                            <label for="">12:30</label>
-                            <input type="radio" name="" id="">
-                            <label for="">13:00</label>
-                            <input type="radio" name="" id="">
-                            <label for="">13:30</label>
-                            <input type="radio" name="" id="">
-                            <label for="">14:00</label>
-                        </div> -->
-                        <p class="or">OR</p>
-
-                        <label for="">Dinner:</label>
-                        <select name="" id="" name="dinner">
-                            <option value="" disabled selected>Please choose a time</option>
-                            <option value="">20:30</option>
-                            <option value="">21:00</option>
-                            <option value="">21:30</option>
-                            <option value="">22:00</option>
-                            <option value="">22:30</option>
-                            <option value="">23:00</option>
-                            <option value="">23:30</option>
-                            <option value="">00:00</option>
-                        </select>
-                    </div>
-                </form>
-                <button type="submit"><a href="#modal-reser2">Continue</a></button>
-
-                <a href="#title-reservation" class="form-exit"><i class="fa-solid fa-xmark"></i></a>
+            <div class="presentation-member-2">
+                <div class="img-member">
+                    <img class="img-home" src="" alt="">
+                </div>
+                <div class="description-member">
+                    <p class="p1-home">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae quae voluptates culpa
+                        obcaecati sed autem, nisi, delectus qui hic repudiandae harum architecto suscipit iusto voluptas
+                        assumenda nesciunt doloremque voluptate? Voluptatum.</p>
+                </div>
             </div>
-        </section>
-
-        <section id="modal-reser2" class="modal-reservation">
-            <div class="modal-container">
-                <h2>YOUR CONTACT DETAILS</h2>
-                <form action="">
-                    <div class="modal-reservation__form-items">
-                        <label for="">First name:</label>
-                        <input type="text" required name="firstName">
-                    </div>
-                    
-                    <div class="modal-reservation__form-items">
-                        <label for="">Surname:</label>
-                        <input type="text" required name="Surname">
-                    </div>
-
-                    
-                    <div class="modal-reservation__form-items">
-                        <label for="">Phone number:</label>
-                        <input type="tel" required>
-                    </div>
-                    
-                    <div class="modal-reservation__form-items">
-                        <label for="">Email</label>
-                        <input type="email" name="" id="" required>
-                    </div>
-
-                    <div class="modal-reservation__form-items">
-                        <label for="">Add a special request (optional)</label>
-                        <textarea name="" id="" cols="30" rows="2" x-webkit.speech></textarea>
-                    </div>
-                    
-                </form>
-
-                <button type="submit"><a href="#modal-reser3">Reserve</a></button>
-
-                <a href="#modal-reser" class="form-back"><i class="fa-solid fa-arrow-left"></i></a>
-                <a href="#title-reservation" class="form-exit"><i class="fa-solid fa-xmark"></i></a>
+        
+            <div class="presentation-member-1">
+                <div class="description-member">
+                    <p class="p1-home">Brisa Alvarez future Systems Engineer. She's from Pilar, Buenos Aires.
+                        She is currently studying the entrance seminar for the Systems Engineering career at the UTN (National Technological University).
+                        Her hobbies are urban dances, riding a bike and discovering new places in the country.</p>
+                </div>
+                <div class="img-member">
+                    <img class="img-home" src="./assets/img/team/Bri.jpg" alt="Bri">
+                </div>
             </div>
-        </section>
-
-        <section id="modal-reser3" class="modal-reservation">
-            <div class="modal-container">
-                <h2>CREDIT CARD DETAILS</h2>
-                <form action="">
-                    <div class="modal-reservation__form-items">
-                        <label for="">Country:</label>
-                        <input type="text" required name="country">
-                    </div>
-
-                    <div class="modal-reservation__form-items">
-                        <label for="">Card:</label>
-                        <section class="creditCard-card">
-                            <div>
-                                <label for=""><i class="fa-brands fa-cc-mastercard icon-creditCard"></i></label>
-                                <input type="radio" name="" id="">
-                            </div>
-    
-                            <div>
-                                <label for=""><i class="fa-brands fa-cc-visa icon-creditCard"></i></label>
-                                <input type="radio" name="" id="">
-                            </div>
-    
-                            <div>
-                                <label for=""><i class="fa-brands fa-cc-amex icon-creditCard"></i></label>
-                                <input type="radio" name="" id="">
-                            </div>
-                        </section>
-                    </div>
-                    
-                    <div class="modal-reservation__form-items">
-                        <label for="">Name on card:</label>
-                        <input type="text" required name="nameOnCard">
-                    </div>
-
-                    
-                    <div class="modal-reservation__form-items">
-                        <label for="">Card number:</label>
-                        <input type="text" required>
-                    </div>
-                    
-                    <div class="modal-reservation__form-items">
-                        <label for="">Expiration date:</label>
-                        <input type="text" required placeholder="mm/yy">
-                    </div>
-
-                    <div class="modal-reservation__form-items">
-                        <label for="">CVC:</label>
-                        <input type="text" required>
-                    </div>
-                    
-                </form>
-                <p>Check that all the options were entered correctly and then click confirm</p>
-                <button type="submit"><a href="#title-reservation">Confirm</a></button>
-
-                <a href="#modal-reser2" class="form-back"><i class="fa-solid fa-arrow-left"></i></a>
-                <a href="#title-reservation" class="form-exit"><i class="fa-solid fa-xmark"></i></a>
+        
+            <div class="presentation-member-2">
+                <div class="img-member">
+                    <img class="img-home" src="./assets/img/team/Mauri.jpg" alt="">
+                </div>
+                <div class="description member">
+                    <p class="p1-home">Mauricio Rivalta, web programming student. He currently resides in Cordoba, Argentina. His hobbies
+                        are <i class="fa-solid fa-book"></i> reading, training and continuing to learn <i class="fa-solid fa-glasses"></i>.</p>
+                </div>
             </div>
+        
         </section>
-    </main>
+        
+        <section class="iniciatec-info-section">
+            <h2 class="title2-home">What is it and what do we learn at IniciaTec?</h2>
+            
+            <div class="iniciatec-info-img">
+                <div class="iframe-inicitec">
+                    <iframe width="500" height="380" src="https://www.youtube.com/embed/AHcdrNQLbtM" title="Iniciatec | Accenture"
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="description-iniciatec">
+                    <p class="p-iniciatec">
+                        Iniciatec is a program based on learning
+                        increasing, that is, the contents are taught in such a way that
+                        students will develop and strengthen skills with
+                        Over time. Starting with general aspects of
+                        Web programming and layout of a site with HTML,
+                        following with the addition of design and styles imparted with CSS,
+                        CSS Grid, Flexbox, and the addition of tools like maps,
+                        forms, tables, etc. After that, they are taught
+                        working resources such as Git and Github to upload your pages
+                        to the web and keep them archived in a virtual repository. 
+                    </p>
+                    <p class="p-iniciatec">
+                        The Daily Work Methodology simulates a work environment in each
+                        one of the projects and their stages, including a
+                        framework called Scrum and daily meetings
+                        called daily scrum meeting, where they briefly interact
+                        about pending tasks, progress, daily goals, etc.
+                    </p>
+                    <p class="p-iniciatec">
+                        One of the main pillars of the Bootcamp consists of reinforcing
+                        the quality of work as a team unit, supporting each other
+                        others and raising fellowship in the formation environment.
+                    </p>
+                    <div class="flex-logos">
+                        <div class="logo-iniciatec">
+                            <img src="./assets/img/INICIATEC_logo.jpg" alt="Logo IniciaTec">
+                        </div>
+                        <div class="logo-iniciatec">
+                            <img src="./assets/img/original.jpg" alt="Logo MindHub">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+        
+        <section class="contact-form-section">
+            <div class="form-home">
+                <div class="info-form">
+                    <h2 class="title3-home">Contact</h2>
+                    <a href="#"><i class="fa-solid fa-phone-flip space"></i> 123-456-789 </a>
+                    <a href="#"><i class="fa-regular fa-envelope space"></i> iniciatec@gmail.com</a>
+                    <a href="#"><i class="fa-solid fa-location-dot space"></i> Buenos Aires, Argentina</a>
+                </div>
+            </div>
+            <form action="#" autocomplete="off">
+                <input type="text" name="nombre" id="nombre" placeholder="Name" class="campo">
+                <input type="email" name="email" id="email" placeholder="Email" class="campo">
+                <textarea name="mensaje" id="mensaje" placeholder="Menssage"></textarea>
+                <input type="submit" name="enviar" value="Submit" class="btn-enviar">
+            </form>
+        
+        </section>
+   
+       </main>
     <footer>
         <p>© 2022 IniciaFood All Rights Reserved.</p>
         <p class="nameTeam">Rocket-Devs Agency</p>
