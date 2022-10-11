@@ -427,6 +427,14 @@ footer>p:nth-of-type(2){
     text-align: start;
 }
 
+.nameTeam:hover{
+    /* transform: rotate(360deg);
+    transition: all 4s ease; */
+
+    transform: rotate(15deg);
+    transition: all 0.5s ease;
+}
+
 .container-team{
     display: grid;
     grid-template-columns: repeat(4);
@@ -470,4 +478,6 @@ div>.githubLink{
 .githubLink>p:hover,
 .githubLink>i:hover{
     color: #2c2c2c;
+    transform: rotate(360deg);
+    transition: all 3s ease;
 }
