@@ -118,9 +118,15 @@ h2.tile1-home{
     border-radius: 0% 15%;
     color: black;
     transition: all 300ms ease;
+    
 }
 
-.presentation-member-1:hover{
+.img-member img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+.presentation-member-1:hover {
     margin-left: -5%;
     margin-right: -5%;
     padding: 8%;
@@ -128,6 +134,8 @@ h2.tile1-home{
 
 .presentation-member-2{
     display: grid;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: 50% 50%;
     padding: 5%;
     margin-bottom: 4%;
@@ -144,9 +152,12 @@ h2.tile1-home{
     padding: 8%;
 }
 
-.img-member{
-    /* background-color: red; */
-    height: 100%;
+.description-member {
+    width: 90%;
+    margin: auto;
+}
+.img-home {
+    margin-left: 25%;
 }
 
 .img-home{
@@ -164,53 +175,80 @@ h2.title2-home{
     justify-content: center;
     text-align: center;
     font-size: 40px;
-    padding-bottom: 3%;    
+    padding-bottom: 3%;
 }
-
-.iniciatec-info-section{
-    background-color: #947654;
-    color: #ffffff;
-    width: 100%;
-    /* height: 800px; */
-    padding: 4em 0;
+.iniciatec-info-section {
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(90, 10, 136));
+    padding: 70px 0px;
+}
+.iniciatec-info-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2em;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+}
+.iniciatec-info-img .iframe-inicitec, 
+.iniciatec-info-img .description-iniciatec{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-}
-
-.iniciatec-info-img{
-    display: grid;
-    grid-template-columns: 70% 30%;
-    justify-content: center;
     align-items: center;
-    margin-left: 10%;
-    margin-right: 10%; 
-    font-size: 20px;   
-    font-weight: 400;
+    background-color: rgba(0, 0, 0,0.5);
+    padding: 30px 40px;
+    border-radius: 30px;
 }
 
-img.iniciatec-picture{
-    display: flex;
-    height: 30vh;
-    width: 15vw;
-}
-
-p.p2-home{
-    justify-content:start;
+.p-iniciatec {
+    margin-bottom: 10px;
     text-align: center;
-    margin-right: 6%;
 }
 
-.contact-form-section{
+.flex-logos {
+    display: flex;
+}
+
+.logo-iniciatec img {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border-radius: 50%;
+}
+
+.img-team {
+    background-image: url(../assets/img/restaurant.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 60%;
     width: 100%;
-    /* height: 500px; */
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    opacity: 0.7;
+}
+
+.h3-team {
+    font-size: 30px;
+    text-align: center;
+    margin: 100px 0px;
+}
+
+.title-team {
+    font-size: 50px;
+    margin-top: 150px;
+    color:#ffffff;
+}
+
+.contact-form-section {
+    width: 100%;
+    height: 300px;
     max-width: 1100px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 50px;
-    margin-top: 15%;
+    margin-top: 10%;
     margin-bottom: 10%;
 }
 
