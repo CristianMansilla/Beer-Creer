@@ -35,11 +35,11 @@
     </header>
 
     <main>
-        <div class="container-image__main">
+        <section class="container-image__main">
             <h2 id="title-reservation">BOOK A TABLE</h2>
-        </div>
+        </section>
 
-        <div class="container-information__main">
+        <section class="container-information__main">
             <h3>What to know before you go</h3>
 
             <div class="container-information__main-info">
@@ -48,11 +48,83 @@
                 <p>We have a 15 minute grace period. Please call us if you are running later than 15 minutes after your booked time.</p>
                 <p>We may contact you about this booking, so please ensure your email and phone number are up to date.</p>
             </div>
-        </div>
 
-        <a href="#modal-reser" class="main-a"><button class="main-button">Continue</button></a>
+            <a href="#form1"><i class="fa-solid fa-chevron-down style-i"></i></a>
+            
+            <div class="form-container modal-container" id="form1">
+                <h2>MAKE YOUR SELECTION</h2>
+                <form action="">
+                    <div class="modal-reservation__form-items">
+                        <label for="">Number of guests:</label>
+                        <select name="numberofGuests" required>
+                            <option>1 Guest</option>
+                            <option>2 Guests</option>
+                            <option>3 Guests</option>
+                            <option>4 Guests</option>
+                            <option>5 Guests</option>
+                            <option>6 Guests</option>
+                            <option>7 Guests</option>
+                            <option>8 Guests</option>
+                            <option>9 Guests</option>
+                            <option>10 Guests</option>
+                        </select>
+                    </div>
+                    
+                    <div class="modal-reservation__form-items">
+                        <label for="dateToDine">Date to dine:</label>
+                        <input type="date" name="dateToDine" id="dateToDine" required>
+                    </div>
 
-        <section id="modal-reser" class="modal-reservation">
+                    
+                    <div class="modal-reservation__form-items">
+                        <label for="">Place:</label>
+                        <select name="place" required>
+                            <option disabled selected>Please choose an area</option>
+                            <option>Area 1</option>
+                            <option>Area 2</option>
+                        </select>
+                    </div>
+                    
+                    <div class="modal-reservation__form-items">
+                        <label for="">Time to dine</label>
+
+                        <label for="">Lunch:</label>
+                        <select name="lunch">
+                            <option disabled selected>Please choose a time</option>
+                            <option>11:30</option>
+                            <option>12:00</option>
+                            <option>12:30</option>
+                            <option>13:00</option>
+                            <option>13:30</option>
+                            <option>14:00</option>
+                        </select>
+
+                        <p class="or">OR</p>
+
+                        <label for="">Dinner:</label>
+                        <select name="dinner">
+                            <option disabled selected>Please choose a time</option>
+                            <option>20:30</option>
+                            <option>21:00</option>
+                            <option>21:30</option>
+                            <option>22:00</option>
+                            <option>22:30</option>
+                            <option>23:00</option>
+                            <option>23:30</option>
+                            <option>00:00</option>
+                        </select>
+                    </div>
+                </form>
+                <a href="#modal-reser2"><button type="submit">Continue</button></a>
+
+                <!-- <a href="#title-reservation" class="form-exit"><i class="fa-solid fa-xmark"></i></a> -->
+            </div>
+
+        </section>
+
+        <!-- <a href="#modal-reser" class="main-a"><button class="main-button">Continue</button></a> -->
+
+        <!--<section id="modal-reser" class="modal-reservation">
             <div class="modal-container">
                 <h2>MAKE YOUR SELECTION</h2>
                 <form action="">
@@ -121,7 +193,7 @@
 
                 <a href="#title-reservation" class="form-exit"><i class="fa-solid fa-xmark"></i></a>
             </div>
-        </section>
+        </section> -->
 
         <section id="modal-reser2" class="modal-reservation">
             <div class="modal-container">
@@ -157,7 +229,7 @@
 
                 <a href="#modal-reser3"><button type="submit">Reserve</button></a>
 
-                <a href="#modal-reser" class="form-back"><i class="fa-solid fa-arrow-left"></i></a>
+                <!-- <a href="#modal-reser" class="form-back"><i class="fa-solid fa-arrow-left"></i></a> -->
                 <a href="#title-reservation" class="form-exit"><i class="fa-solid fa-xmark"></i></a>
             </div>
         </section>
