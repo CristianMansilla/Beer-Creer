@@ -599,7 +599,7 @@ main{
     text-align: center;
 }
 
-.container-information__main>a>i{
+.chevron-move{
     width: 100%;
     text-align: center;
     margin-top: 3em;
@@ -675,11 +675,13 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 500px;
+    /* height: 500px; */
     font-size: 16px;
     width: 50%;
     margin: auto;
     text-align: center;
+    margin: 6em auto;
+    /* background-color: red; */
 }
 
 .container-impact {
@@ -921,6 +923,10 @@ main{
 }
 
 /** -----CUSTOMERS----- **/
+.mainCustomer>.chevron-move{
+    margin-top: 0;
+}
+
 .customer-section{
     width: 100%;
 }
